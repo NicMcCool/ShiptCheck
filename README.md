@@ -1,5 +1,5 @@
 # ShiptCheck 
-### a simple web query tool to to notify when deliveries are available on Shipt
+### a simple web query tool to notify when deliveries are available on Shipt
 ##### ShiptCheck uses a headless instance of Chrome and an OAuth bypass/migration to access Shipt 
 
 ## SETUP 
