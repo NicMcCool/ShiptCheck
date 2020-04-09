@@ -1,3 +1,17 @@
+##########################################
+#              Shipt Check               #
+#     A simple web query tool to check   #
+#     if deliveries are available, and   #
+#      sends a PushBullet notification   #
+#             when they are.             #
+##########################################
+#                                        #
+#          created by: NicMcCool         #
+#       https://github.com/NicMcCool     #
+#                                        #
+##########################################
+
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.common.by import By
@@ -57,8 +71,8 @@ def ShiptScrape():
         pb.pushNote(devices[0]["iden"], 'Shipt Notification', 'You can schedule delivery now!')
         driver.quit()
 
+# SET SCHEDULE FOR SCRIPT REPEAT RUNS
 schedule.every(10).minutes.do(ShiptScrape)
-
 while True:
     schedule.run_pending()
     time.sleep(1)
