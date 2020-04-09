@@ -1,0 +1,5 @@
+selenium
+-e git+https://github.com/Azelphur/pyPushBullet.git
+beautifulsoup4
+regex
+schedule
